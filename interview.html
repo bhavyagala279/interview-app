@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Meeting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="statusMessage">Preparing your meeting...</h2>
+    <button id="retryButton" style="display: none;" onclick="startMeeting()">Retry Permissions</button>
+    
+    <script>
+        async function startMeeting() {
+            const statusMessage = document.getElementById("statusMessage");
+            const retryButton = document.getElementById("retryButton");
+            try {
+                // Request webcam and microphone access
+                await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                
+                // Redirect to the Google Meet or Zoom link
+                window.location.href = "https://meet.google.com/zaq-hbqk-thh"; // Replace with your actual link
+            } catch (error) {
+                statusMessage.innerText = "Permission denied. Please allow access to continue.";
+                retryButton.style.display = "block";
+                console.error(error);
+            }
+        }
+        
+        window.onload = startMeeting;
+    </script>
+</body>
+</html>
