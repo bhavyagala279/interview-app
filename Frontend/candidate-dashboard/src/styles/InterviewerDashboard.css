@@ -1,0 +1,133 @@
+.interviewer-dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .interviewer-dashboard-header {
+    text-align: center;
+    padding: 40px 0;
+    color: #1a1a1a;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .interviewer-dashboard-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .interviewer-dashboard-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .interviewer-dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .job-opening-card,
+  .zoom-link-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+  }
+  
+  .job-opening-card:hover,
+  .zoom-link-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .job-opening-card h2,
+  .zoom-link-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .job-opening-card h3 {
+    font-size: 1.4rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .job-description {
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .job-opening-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .job-opening-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  .job-opening-card li {
+    margin-bottom: 5px;
+  }
+  
+  .zoom-link {
+    display: block;
+    font-size: 1rem;
+    color: #4a90e2;
+    text-decoration: none;
+    word-break: break-all;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .zoom-link:hover {
+    color: #9013fe;
+    text-decoration: underline;
+  }
+  
+  .zoom-instruction {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .no-link {
+    font-size: 1rem;
+    color: #e74c3c;
+    font-style: italic;
+  }
+  
+  .interviewer-dashboard-footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

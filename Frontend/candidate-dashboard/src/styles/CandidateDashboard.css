@@ -1,0 +1,211 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    padding: 40px 0;
+    color: #1a1a1a;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    -webkit-background-clip: text;
+    background-clip: text;    -webkit-text-fill-color: transparent;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .dashboard-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .upload-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .upload-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .upload-card p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .upload-area {
+    border: 2px dashed #4a90e2;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background: #f9fbfc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .upload-area:hover {
+    border-color: #9013fe;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .upload-label {
+    font-size: 1.1rem;
+    color: #4a90e2;
+    cursor: pointer;
+    display: block;
+    word-wrap: break-word;
+  }
+  
+  .upload-button {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .upload-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .upload-button:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+  
+  .status-message {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .status-message.success {
+    color: #27ae60;
+  }
+  
+  .status-message.error {
+    color: #e74c3c;
+  }
+  
+  .dashboard-footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Existing styles remain unchanged, append the following at the end */
+
+.zoom-link-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9fbfc;
+    border-radius: 10px;
+    border: 1px solid #e0e7ff;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .zoom-link-section h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .zoom-link {
+    display: block;
+    font-size: 1rem;
+    color: #4a90e2;
+    text-decoration: none;
+    word-break: break-all;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .zoom-link:hover {
+    color: #9013fe;
+    text-decoration: underline;
+  }
+  
+  .zoom-instruction {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+.zoom-link-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9fbfc;
+  border-radius: 10px;
+  border: 1px solid #e0e7ff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.zoom-link-section h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.zoom-link {
+  display: block;
+  font-size: 1rem;
+  color: #4a90e2;
+  text-decoration: none;
+  word-break: break-all;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.zoom-link:hover {
+  color: #9013fe;
+  text-decoration: underline;
+}
+
+.zoom-instruction {
+  font-size: 0.9rem;
+  color: #777;
+}

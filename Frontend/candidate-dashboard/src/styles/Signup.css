@@ -1,0 +1,98 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  }
+  
+  .signup-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .signup-card h1 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  
+  .signup-card p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #4a90e2;
+  }
+  
+  .signup-button {
+    background: linear-gradient(90deg, #4a90e2, #9013fe);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    opacity: 0.9;
+  }
+  
+  .success {
+    color: #27ae60;
+    margin-top: 15px;
+  }
+  
+  .error {
+    color: #e74c3c;
+    margin-top: 15px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
